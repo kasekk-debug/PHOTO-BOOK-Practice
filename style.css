@@ -61,7 +61,7 @@ h1 {
 }
 
 .index-content {
-  max-width: 600px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
@@ -81,7 +81,7 @@ h1 {
 
 .detail {
   margin: 48px auto 0;
-  max-width: 600px;
+  max-width: 680px;
   padding: 0 20px;
   font-size: 14px;
 }
@@ -121,7 +121,6 @@ h1 {
 }
 
 .value {
-  /* テキストない部分も広げる */
   flex: 1; 
 }
 
@@ -140,23 +139,19 @@ h1 {
   max-width: 600px;
   margin: 100px auto 20px;
   font-size: 12px;
+  padding-left: 20px;
 }
 
 @media (max-width: 768px) {
 
-  .detail-content { /* ← どの要素に適用するか指定する */
+  .detail-content {
 
     flex-direction: column;
-    /* 横並び（row）から縦並び（column）に変更する
-       → PCでは横、スマホでは縦にするため */
-
     align-items: center;
-    /* 横方向の位置を中央にする
-       → 縦並びになった要素を真ん中に寄せる */
-
     width: 100%;
-    /* 横幅を親要素いっぱいに広げる
-       → スマホで変に小さくならないようにする */
-
+   
   }
+
 }
+
+  
