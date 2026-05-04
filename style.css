@@ -67,7 +67,10 @@ h1 {
 
 .index-li ol {
   margin: 0;
-  padding-left: 20px;
+  padding-left: 60px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 80px;
   
 }
 
@@ -87,19 +90,23 @@ h1 {
 }
 
 .detail h3 {
-  font-size: 18px;
+  font-size: 22px;
+  margin-bottom: 12px;
 }
 
 .detail-content {
   display: flex;
   gap: 48px;
-  margin-top: 12px;
-
+  margin-top: 24px;
 }
 
 .detail-img {
   max-width:350px;
   width: 100%;
+}
+
+.detail-img img {
+  border-radius: 8px;
 }
 
 .detail-info {
@@ -126,10 +133,25 @@ h1 {
 
 .detail-text {
   margin-top: 24px;
+  line-height: 1.8;
 }
 
 .detail-link {
   margin-top: 24px;
+}
+
+.detail-link a {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #333;
+  color: #fff;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.detail-link a:hover {
+  background-color: #555;
 }
 
 
